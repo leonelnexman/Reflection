@@ -5,6 +5,9 @@
 }
 html{
     font-size: calc(100vw / 1920 * 10);
+    @media (max-width: 962px){
+        font-size: calc(100vw / 340 * 10);  
+    }
 }
 body{
     font-family: 'Inter', sans-serif;
@@ -17,7 +20,10 @@ body{
     // padding: 0 1.5rem;
     margin: 0 auto;
     @media (max-width: 962px){
-        padding: 0 6rem;  
+        padding: 0 1.6rem;  
     }
 }
+
+
+
 

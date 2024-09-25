@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://leonelnexman.github.io/Reflection/",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
@@ -26,3 +26,4 @@
     "sass": "^1.69.5"
   }
 }
+
