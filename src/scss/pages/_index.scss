@@ -729,6 +729,9 @@
     &__img-slider{
         position: relative;
         margin-bottom: 2rem;
+        img{
+            width: 100%;
+        }
     }
     &__img-nav{
         display: flex;
@@ -1391,7 +1394,7 @@ color: #fff;
             color: #fff;
             margin-bottom: 1.5rem;
             span{
-                color: #db2a32;
+                color: #922328;
             }    
         }
     }
@@ -1499,11 +1502,14 @@ color: #fff;
         color: #fff;
         a{
             font: 400 2.4rem / 1.17 $font-family;
-            color: #fff;    
+            color: #fff;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
         p{
             font: 400 1.4rem / 1.17 $font-family;
-            color: #fff;   
+            color: #fff;
+            text-transform: none;   
         }   
     }
     &__tel-title{
@@ -1545,8 +1551,14 @@ color: #fff;
         color: #fff;
         max-width: 39.6rem;
         margin-bottom: 1rem;
+        @media (max-width: 962px){
+            font-size: 1.9rem;
+        }
         span{
-            font: 600 2.4rem / 1.17 $font-family;   
+            font: 600 2.4rem / 1.17 $font-family; 
+            @media (max-width: 962px){
+                font-size: 1.9rem;
+            }  
         }    
     }
     &__route{
@@ -1576,6 +1588,7 @@ color: #fff;
         iframe{
             width: 100.9rem;
             height: 64.5rem;
+            filter: grayscale(1);
             @media (max-width: 962px){
                 width: 100%;
                 height: 37.8rem;
@@ -1812,43 +1825,23 @@ color: #fff;
         font: 700 2rem / 1.17 $second-family;
         color: #fff;
         @media (max-width: 962px){
-            width: 50%;
+            width: 100%;
             &:nth-child(1){
-                border-top: 0.1rem solid #5a5a5a;
-            }
-            &:nth-child(2){
-                border-top: 0.1rem solid #5a5a5a;
-            }
-            &:nth-child(3){
-                border-top: 0.1rem solid #5a5a5a;
-            }
-            &:nth-child(4){
-                border-top: 0.1rem solid #5a5a5a;
-            }
-            &:nth-child(7){
-                border-bottom: 0.1rem solid #5a5a5a;
-            }
-            &:nth-child(8){
-                border-bottom: 0.1rem solid #5a5a5a;
-            }
-            .rent-price__item:nth-child(6){
-
+                border: 0.1rem solid #5a5a5a;
+                border-bottom: none;
             }
         }
-        &:nth-child(4n){
-            border-right: none;
-        }
-        &:nth-child(5){
+    }
+    &__block{
+        .rent-price__item:nth-child(2){
             border-top: 0.1rem solid #5a5a5a;
         }
-        &:nth-child(6){
-            border-top: 0.1rem solid #5a5a5a;
-        }
-        &:nth-child(7){
-            border-top: 0.1rem solid #5a5a5a;
-        }
-        &:nth-child(8){
-            border-top: 0.1rem solid #5a5a5a;
+        @media (max-width: 962px){
+            display: flex;
+            width: 100%;
+            &:last-child{
+                border-bottom: 0.1rem solid #5a5a5a;  
+            }
         }
     }
 }
